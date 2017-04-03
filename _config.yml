@@ -14,7 +14,7 @@ timezone:
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://supercoderhawk.github.io
 root: /Blog
-permalink: :year/:month/:day/:title/
+permalink: :year/:month/:abbrlink/
 # permalink_defaults:
 
 # Directory
@@ -63,7 +63,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: hiker
 
 admin:
   username: supercoderhawk
@@ -77,9 +77,8 @@ deploy:
   repo: git@github.com:supercoderhawk/Blog.git
   branch: gh-pages
 
-hash_title:
-  digits: 8
-
 plugins:
   hexo-renderer-mathjax
 
+abbrlink:
+	crc32
